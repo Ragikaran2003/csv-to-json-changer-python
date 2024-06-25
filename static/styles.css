@@ -1,0 +1,108 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Common container styles */
+.container, .container1 {
+    max-width: 800px; /* Adjust max-width as per your design */
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading styles */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #007bff; /* Primary color for headings */
+}
+
+/* Paragraph styles */
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* Strong tag styles */
+strong {
+    color: #333; /* Dark color for strong emphasis */
+}
+
+/* Link styles */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Styles specific to form container */
+.container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container input[type="file"] {
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.container input[type="file"]:hover {
+    background-color: #e0e0e0;
+}
+
+.container input[type="file"]::-webkit-file-upload-button {
+    visibility: hidden;
+}
+
+.container input[type="file"]::before {
+    content: 'Select File';
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.container input[type="file"]:hover::before {
+    background-color: #0056b3;
+}
+
+.container button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.container button[type="submit"]:hover {
+    background-color: #45a049;
+}
